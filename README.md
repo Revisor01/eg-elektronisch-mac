@@ -69,13 +69,13 @@ Um das Programm bequem über den Applications-Ordner starten zu können, führe 
 #### Mache das Skript ausführbar:
 
 ```sh
-chmod +x create_eg_app.sh
+chmod +x create_eg_wine_app.sh.sh
 ```
 
 Führe das Skript aus:
 
 ```sh
-./create_eg_app.sh
+./create_eg_wine_app.sh.sh
 ```
 
 Nun solltest du die Anwendung "Evangelisches Gesangbuch" im Applications-Ordner sehen und starten können.
