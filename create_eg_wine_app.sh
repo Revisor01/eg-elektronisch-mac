@@ -7,7 +7,7 @@ APP_NAME="Evangelisches Gesangbuch"
 WINDOWS_APP_PATH="C:/Program Files (x86)/mfbo2a32.exe"
 
 # Pfad zum Icon
-ICON_PATH="~/Downloads/eg.icns"
+ICON_PATH="~/Downloads/eg-elektronisch.icns"
 
 # Pfad zum Applications-Ordner
 APPLICATIONS_FOLDER="/Applications"
@@ -47,12 +47,12 @@ cat <<EOL > "$APPLICATIONS_FOLDER/$APP_NAME.app/Contents/Info.plist"
     <key>CFBundlePackageType</key>
     <string>APPL</string>
     <key>CFBundleIconFile</key>
-    <string>eg.icns</string>
+    <string>eg-elektronisch.icns</string>
 </dict>
 </plist>
 EOL
 
 # Icon-Datei kopieren
-cp "$ICON_PATH" "$APPLICATIONS_FOLDER/$APP_NAME.app/Contents/Resources/eg.icns"
+cp "$ICON_PATH" "$APPLICATIONS_FOLDER/$APP_NAME.app/Contents/Resources/eg-elektronisch.icns"
 
 echo "Die Anwendung $APP_NAME wurde erfolgreich im Applications-Ordner erstellt."
