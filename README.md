@@ -91,7 +91,7 @@ Importiere die notwendigen Dateien von der CD, um das Programm vollständig nutz
 
 ## 9. Erstellen eines Shortcuts mit Icon im Applications-Ordner
 
-Um das Programm bequem über den Applications-Ordner starten zu können, führe das folgende Skript aus, um einen Shortcut mit Icon zu erstellen. Dazu die Datei create_eg_wine_app.sh herunterladen und die icns Datei herunterladen. Passe die Felder gegebenfalls an.
+Um das Programm bequem über den Applications-Ordner starten zu können, führe das folgende Skript aus, um einen Shortcut mit Icon zu erstellen. Dazu die Datei [create_eg_wine_app.sh] (create_eg_wine_app.sh) herunterladen und die [eg-elektronisch.icns](eg-elektronisch.icns) Datei herunterladen. Passe die Felder gegebenfalls an.
 
 ### Mache das Skript ausführbar:
 
