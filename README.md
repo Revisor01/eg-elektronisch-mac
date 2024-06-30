@@ -159,7 +159,7 @@ regsvr32 "C:\Program Files (x86)\bibel digital\tx4ole14.ocx"
 
 ## 7. Icon hinzufügen
 
-1. Lade [eg-elektronisch.icns](eg-elektronisch.icns) als Icon herunter.
+1. Lade [eg-elektronisch.icns](eg-elektronisch.icns) oder [eg-elektronisch.png](eg-elektronisch.png) als Icon herunter.
 2. Öffne den Wrapper und klicke auf "Advanced".
 3. Gehe zu "Configuration" und klicke auf "Browse" neben dem Icon-Feld.
 4. Wähle das Icon aus, das du verwenden möchtest.
