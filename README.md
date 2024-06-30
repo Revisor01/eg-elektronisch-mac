@@ -79,3 +79,70 @@ Führe das Skript aus:
 ```
 
 Nun solltest du die Anwendung "Evangelisches Gesangbuch" im Applications-Ordner sehen und starten können.
+
+# Evangelisches Gesangbuch Elektronisch auf Mac
+
+## Anleitung zur Installation des Evangelischen Gesangbuchs Elektronisch auf Mac OSX
+
+Diese Anleitung beschreibt die Schritte, um das Evangelische Gesangbuch Elektronisch auf einem Mac unter Verwendung von Wineskin Winery zu installieren und als eigenständige App zu verpacken.
+
+### 1. Installation von Homebrew
+
+Falls Homebrew noch nicht installiert ist, führe diesen Befehl im Terminal aus:
+
+```sh
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+### 2. Wineskin Winery herunterladen und installieren
+
+Installiere Wineskin Winery über Homebrew:
+
+```sh
+brew install --cask --no-quarantine gcenx/wine/wineskin
+```
+
+### 3. Wineskin Winery einrichten
+
+1. Öffne Wineskin Winery und klicke auf "Update" oder "Download", um sicherzustellen, dass du die neueste Engine und Wrapper-Version hast.
+2. Klicke auf "+", um einen neuen Wrapper zu erstellen.
+3. Gib deinem Wrapper einen Namen, z.B. "EG", und klicke auf "Create". 
+
+### 4. Wrapper konfigurieren
+
+1. Nachdem der Wrapper erstellt wurde, öffne ihn. Du findest ihn in deinem Benutzerverzeichnis unter `~/Applications/Wineskin`.
+2. Klicke auf "Install Software" und wähle "Choose Setup Executable".
+3. Navigiere zu der MFchi-Setup-Datei und installiere sie.
+4. Den Suchvorgang kannst du abbrechen.
+5. Nach der Installation wird gefragt, ob das Programm gestartet werden soll. Das kannst du verneinen.
+6. Nachdem die Installation abgeschlossen ist, wirst du gefragt, welche Datei gestartet werden soll. Wähle die Hauptausführbare Datei aus, z.B. `C:/Program Files (x86)/bibel digital/mfbo2a32.exe`.
+
+### 5. Zusätzliche Bibliotheken und DLLs installieren
+
+1. Öffne den Wrapper und klicke auf "Advanced".
+2. Gehe zu "Tools" und öffne "Winetricks".
+3. Installiere `mfc42` über Winetricks.
+
+### 6. Registriere die `tx4ole14.ocx`-Datei
+
+1. Öffne den Wrapper und klicke auf "Advanced".
+2. Gehe zu "Tools" und öffne "Commandline".
+3. Registriere die `tx4ole14.ocx`-Datei:
+```sh
+regsvr32 "C:\Program Files (x86)\bibel digital\tx4ole14.ocx"
+```
+
+### 7. Wrapper als eigenständige App nutzen
+
+1. Schließe alle offenen Fenster von Wineskin.
+2. Der Wrapper, der nun eine vollständige Wine-Umgebung sowie die installierte MFchi-Anwendung enthält, kann nun wie jede andere Mac-Anwendung verwendet werden.
+3. Starte das Programm durch einen Doppelklick. Bibel Digital sollte nun starten.
+4. Über Einbindung die Textdateien importieren und über Online die Updates einspielen.
+5. Kopiere den Wrapper einfach auf einen anderen Mac, und es sollte sofort einsatzbereit sein.
+
+### 6. Icon hinzufügen
+
+1. Öffne den Wrapper und klicke auf "Advanced".
+2. Gehe zu "Configuration" und klicke auf "Browse" neben dem Icon-Feld.
+3. Wähle das Icon aus, das du verwenden möchtest.
+4. Nutze gerne das Icon aus diesem Git.
