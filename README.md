@@ -4,6 +4,8 @@
 
 Diese Anleitung beschreibt die Schritte, um das Evangelische Gesangbuch Elektronisch auf einem Mac unter Verwendung von [Wine](#installation-mit-wine) zu installieren.
 Alernativ als [Installation mit Wineskin Winery](#installation-mit-wineskin-winery) als App-Bundle.
+Getestet unter MacOSX 14.5 Sonoma - Apple Silicon.
+
 ## Inhaltsverzeichnis
 
 1. [Installation mit Wine](#installation-mit-wine)
