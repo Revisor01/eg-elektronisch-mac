@@ -58,9 +58,9 @@ Du kannst das Evangelische Gesangbuch Elektronisch nun über das Terminal starte
 wine "C:/MFchi/mfbo2a32.exe"
 ```
 
-### 8. Import der Dateien von der CD
+### 8. Import der Dateien von der CD und Update
 
-Importiere die notwendigen Dateien von der CD, um das Programm vollständig nutzen zu können.
+Importiere die notwendigen Dateien von der CD, um das Programm vollständig nutzen zu können und Update alle Textversionen.
 
 ### 9. Erstellen eines Shortcuts mit Icon im Applications-Ordner
 
