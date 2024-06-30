@@ -3,7 +3,7 @@
 ## Anleitung zur Installation des Evangelischen Gesangbuchs Elektronisch auf Mac OSX via Wine oder Wineskin Winery als App-Bundle
 
 Diese Anleitung beschreibt die Schritte, um das Evangelische Gesangbuch Elektronisch auf einem Mac unter Verwendung von [Wine](#installation-mit-wine) zu installieren.
-Alernativ als [Installation mit Wineskin Winery ```(empfohlen)```](#installation-mit-wineskin-winery) als App-Bundle.
+Alernativ als [Installation mit Wineskin Winery](#installation-mit-wineskin-winery) als App-Bundle.
 ## Inhaltsverzeichnis
 
 1. [Installation mit Wine](#installation-mit-wine)
@@ -17,7 +17,7 @@ Alernativ als [Installation mit Wineskin Winery ```(empfohlen)```](#installation
     8. [Import der Dateien von der CD und Update](#8-import-der-dateien-von-der-cd-und-update)
     9. [Erstellen eines Shortcuts mit Icon im Applications-Ordner](#9-erstellen-eines-shortcuts-mit-icon-im-applications-ordner)
 
-2. [Installation mit Wineskin Winery ```(empfohlen)```](#installation-mit-wineskin-winery)
+2. [Installation mit Wineskin Winery](#installation-mit-wineskin-winery)
     1. [Installation von Homebrew](#1-installation-von-homebrew)
     2. [Wineskin Winery herunterladen und installieren](#2-wineskin-winery-herunterladen-und-installieren)
     3. [Wineskin Winery einrichten](#3-wineskin-winery-einrichten)
@@ -107,7 +107,7 @@ Führe das Skript aus:
 
 Nun solltest du die Anwendung "Evangelisches Gesangbuch" im Applications-Ordner sehen und starten können.
 
-# Installation mit Wineskin Winery ```(empfohlen)```
+# Installation mit Wineskin Winery
 
 Diese Anleitung beschreibt die Schritte, um das Evangelische Gesangbuch Elektronisch auf einem Mac unter Verwendung von Wineskin Winery zu installieren und als eigenständige App zu verpacken.
 
