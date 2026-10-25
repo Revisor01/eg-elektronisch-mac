@@ -182,4 +182,4 @@ regsvr32 "C:\Program Files (x86)\bibel digital\tx4ole14.ocx"
 
 ## Lizenz
 
-Für dieses Repository ist noch keine Lizenz festgelegt.
+[MIT](LICENSE) © 2024–2026 Simon Luthe
