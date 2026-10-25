@@ -6,8 +6,13 @@ APP_NAME="Evangelisches Gesangbuch"
 # Pfad zur Windows-Anwendung
 WINDOWS_APP_PATH="C:/Program Files (x86)/mfbo2a32.exe"
 
-# Pfad zum Icon
-ICON_PATH="~/Downloads/eg-elektronisch.icns"
+# Pfad zum Icon; in Anführungszeichen löst die Shell "~" nicht auf
+ICON_PATH="${ICON_PATH:-$HOME/Downloads/eg-elektronisch.icns}"
+
+if [ ! -f "$ICON_PATH" ]; then
+    echo "Icon nicht gefunden: $ICON_PATH (Pfad per ICON_PATH=... angeben)" >&2
+    exit 1
+fi
 
 # Pfad zum Applications-Ordner
 APPLICATIONS_FOLDER="/Applications"
