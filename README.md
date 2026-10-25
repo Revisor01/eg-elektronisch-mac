@@ -1,9 +1,9 @@
 # Evangelisches Gesangbuch Elektronisch auf Mac
 
-## Anleitung zur Installation von Evangelisches Gesangbuchs Elektronisch auf Mac OSX via Wine oder Wineskin Winery als App-Bundle
+## Anleitung zur Installation des Evangelischen Gesangbuchs Elektronisch auf Mac OSX via Wine oder Wineskin Winery als App-Bundle
 
 Diese Anleitung beschreibt die Schritte, um das Evangelische Gesangbuch Elektronisch auf einem Mac unter Verwendung von [Wine](#installation-mit-wine) zu installieren.
-Alernativ als [Installation mit Wineskin Winery](#installation-mit-wineskin-winery) als App-Bundle.
+Alternativ als [Installation mit Wineskin Winery](#installation-mit-wineskin-winery) als App-Bundle.
 Getestet unter MacOSX 14.5 Sonoma - Apple Silicon.
 
 ## Inhaltsverzeichnis
@@ -93,18 +93,23 @@ Importiere die notwendigen Dateien von der CD, um das Programm vollständig nutz
 
 ## 9. Erstellen eines Shortcuts mit Icon im Applications-Ordner
 
-Um das Programm bequem über den Applications-Ordner starten zu können, führe das folgende Skript aus, um einen Shortcut mit Icon zu erstellen. Dazu die Datei [create_eg_wine_app.sh](create_eg_wine_app.sh) herunterladen und die [eg-elektronisch.icns](eg-elektronisch.icns) Datei herunterladen. Passe die Felder gegebenfalls an.
+Um das Programm bequem über den Applications-Ordner starten zu können, führe das folgende Skript aus, um einen Shortcut mit Icon zu erstellen. Dazu die Dateien [create_eg_wine_app.sh](create_eg_wine_app.sh) und [eg-elektronisch.icns](eg-elektronisch.icns) herunterladen.
+
+Vorher im Skript prüfen:
+
+- `WINDOWS_APP_PATH` muss auf die installierte `mfbo2a32.exe` zeigen. Bei der Installation wie oben ist das `C:/MFchi/mfbo2a32.exe`; die Vorgabe im Skript ist `C:/Program Files (x86)/mfbo2a32.exe`.
+- Das Icon wird in `~/Downloads/eg-elektronisch.icns` erwartet. Liegt es woanders, den Pfad beim Aufruf angeben: `ICON_PATH=/pfad/zu/eg-elektronisch.icns ./create_eg_wine_app.sh`
 
 ### Mache das Skript ausführbar:
 
 ```sh
-chmod +x create_eg_wine_app.sh.sh
+chmod +x create_eg_wine_app.sh
 ```
 
 Führe das Skript aus:
 
 ```sh
-./create_eg_wine_app.sh.sh
+./create_eg_wine_app.sh
 ```
 
 Nun solltest du die Anwendung "Evangelisches Gesangbuch" im Applications-Ordner sehen und starten können.
@@ -175,3 +180,6 @@ regsvr32 "C:\Program Files (x86)\bibel digital\tx4ole14.ocx"
 4. Über Einbindung die Textdateien importieren und über Online die Updates einspielen.
 5. Kopiere den Wrapper einfach auf einen anderen Mac, und es sollte sofort einsatzbereit sein.
 
+## Lizenz
+
+Für dieses Repository ist noch keine Lizenz festgelegt.
