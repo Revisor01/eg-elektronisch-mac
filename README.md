@@ -10,6 +10,10 @@
 </p>
 
 <p align="center">
+  <b>Deutsch</b> · <a href="README.en.md">English</a>
+</p>
+
+<p align="center">
   <img src="https://img.shields.io/badge/Plattform-macOS%2014%2B-blue" alt="Plattform">
   <img src="https://img.shields.io/github/license/Revisor01/eg-elektronisch-mac" alt="Lizenz">
 </p>
@@ -208,8 +212,8 @@ eg-elektronisch-mac
 Erfahrungen mit anderen macOS-Versionen oder Programmständen sind
 willkommen — gern als [Issue](https://github.com/Revisor01/eg-elektronisch-mac/issues).
 Sicherheitslücken bitte vertraulich melden, wie in [SECURITY.md](SECURITY.md)
-beschrieben. Pull Requests laufen durch Tests und einen Secret-Scan; die
-Grundsätze für Beiträge stehen in [CLAUDE.md](CLAUDE.md).
+beschrieben. Pull Requests laufen durch Tests und einen Secret-Scan; siehe
+[CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Lizenz
 
