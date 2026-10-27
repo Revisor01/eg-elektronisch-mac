@@ -16,13 +16,9 @@
 
 ## Worum es geht
 
-Das Evangelische Gesangbuch elektronisch gibt es nur für Windows. Wer im
-Pfarramt oder in der Kirchenmusik einen Mac nutzt, braucht dafür bisher eine
-Windows-Maschine oder eine virtuelle Maschine.
-
-Dieses Repository beschreibt, wie das Programm mit Wine direkt auf dem Mac
-läuft, und bringt ein Skript und ein Icon mit, damit es im Programme-Ordner
-liegt wie jede andere App.
+Das Evangelische Gesangbuch elektronisch gibt es nur für Windows. Hier steht,
+wie es mit Wine auf dem Mac läuft; Skript und Icon legen es als App in den
+Programme-Ordner.
 
 ## Funktionen
 
@@ -195,9 +191,7 @@ regsvr32 "C:\Program Files (x86)\bibel digital\tx4ole14.ocx"
 
 ## Versionen
 
-Was sich wann geändert hat, steht in [CHANGELOG.md](CHANGELOG.md) — nach
-[Keep a Changelog](https://keepachangelog.com/de/1.1.0/), aus Sicht der
-Nutzer:innen geschrieben.
+Was sich wann geändert hat, steht in [CHANGELOG.md](CHANGELOG.md).
 
 ## Aufbau
 

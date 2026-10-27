@@ -1,12 +1,10 @@
 #!/bin/bash
 
-# Name der App
 APP_NAME="Evangelisches Gesangbuch"
 
-# Pfad zur Windows-Anwendung
 WINDOWS_APP_PATH="C:/Program Files (x86)/mfbo2a32.exe"
 
-# Pfad zum Icon; in Anführungszeichen löst die Shell "~" nicht auf
+# In Anführungszeichen löst die Shell "~" nicht auf.
 ICON_PATH="${ICON_PATH:-$HOME/Downloads/eg-elektronisch.icns}"
 
 if [ ! -f "$ICON_PATH" ]; then
@@ -14,14 +12,11 @@ if [ ! -f "$ICON_PATH" ]; then
     exit 1
 fi
 
-# Pfad zum Applications-Ordner
 APPLICATIONS_FOLDER="/Applications"
 
-# Verzeichnisse erstellen
 mkdir -p "$APPLICATIONS_FOLDER/$APP_NAME.app/Contents/MacOS"
 mkdir -p "$APPLICATIONS_FOLDER/$APP_NAME.app/Contents/Resources"
 
-# Shell-Skript erstellen, das die Windows-Anwendung startet
 cat <<EOL > "$APPLICATIONS_FOLDER/$APP_NAME.app/Contents/MacOS/start-windows-app.sh"
 #!/bin/bash
 # Set environment variables for Wine
@@ -32,10 +27,8 @@ export WINEARCH=win32
 /opt/homebrew/bin/wine "$WINDOWS_APP_PATH"
 EOL
 
-# Shell-Skript ausführbar machen
 chmod +x "$APPLICATIONS_FOLDER/$APP_NAME.app/Contents/MacOS/start-windows-app.sh"
 
-# Info.plist Datei erstellen
 cat <<EOL > "$APPLICATIONS_FOLDER/$APP_NAME.app/Contents/Info.plist"
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
@@ -57,7 +50,6 @@ cat <<EOL > "$APPLICATIONS_FOLDER/$APP_NAME.app/Contents/Info.plist"
 </plist>
 EOL
 
-# Icon-Datei kopieren
 cp "$ICON_PATH" "$APPLICATIONS_FOLDER/$APP_NAME.app/Contents/Resources/eg-elektronisch.icns"
 
 echo "Die Anwendung $APP_NAME wurde erfolgreich im Applications-Ordner erstellt."
