@@ -10,10 +10,6 @@
 </p>
 
 <p align="center">
-  <b>Deutsch</b> · <a href="README.en.md">English</a>
-</p>
-
-<p align="center">
   <img src="https://img.shields.io/badge/Plattform-macOS%2014%2B-blue" alt="Plattform">
   <img src="https://img.shields.io/github/license/Revisor01/eg-elektronisch-mac" alt="Lizenz">
 </p>
@@ -196,6 +192,12 @@ regsvr32 "C:\Program Files (x86)\bibel digital\tx4ole14.ocx"
 3. Starte das Programm durch einen Doppelklick. Bibel Digital sollte nun starten.
 4. Über Einbindung die Textdateien importieren und über Online die Updates einspielen.
 5. Kopiere den Wrapper einfach auf einen anderen Mac, und es sollte sofort einsatzbereit sein.
+
+## Versionen
+
+Was sich wann geändert hat, steht in [CHANGELOG.md](CHANGELOG.md) — nach
+[Keep a Changelog](https://keepachangelog.com/de/1.1.0/), aus Sicht der
+Nutzer:innen geschrieben.
 
 ## Aufbau
 
