@@ -1,7 +1,5 @@
 #!/bin/bash
-# Prüft create_eg_wine_app.sh in einem temporären Verzeichnis. Geprüft wird
-# eine Kopie, deren Zielordner fest auf das Temp-Verzeichnis zeigt, damit kein
-# Stand des Skripts je in /Applications schreibt. Aufruf: bash tests/create_app_test.sh
+# Prüft eine Kopie des Skripts mit Zielordner im Temp-Verzeichnis. Aufruf: bash tests/create_app_test.sh
 
 SOURCE="$(cd "$(dirname "$0")/.." && pwd)/create_eg_wine_app.sh"
 failures=0
