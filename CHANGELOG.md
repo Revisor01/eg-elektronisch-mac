@@ -2,11 +2,12 @@
 
 Alle nennenswerten Änderungen an diesem Projekt stehen in dieser Datei.
 
-Das Format folgt [Keep a Changelog](https://keepachangelog.com/de/1.1.0/).
-Versionsnummern gibt es bisher nicht; die Anleitung beschreibt den Stand von
-`main`.
+Das Format folgt [Keep a Changelog](https://keepachangelog.com/de/1.1.0/),
+die Versionierung folgt [Semantic Versioning](https://semver.org/lang/de/).
 
 ## [Unreleased]
+
+## [1.0.0] - 2026-10-27
 
 ### Behoben
 
@@ -25,4 +26,5 @@ Versionsnummern gibt es bisher nicht; die Anleitung beschreibt den Stand von
 - Skript, das einen Starter mit Icon im Programme-Ordner anlegt.
 - Icon für die App.
 
-[Unreleased]: https://github.com/Revisor01/eg-elektronisch-mac/commits/main
+[Unreleased]: https://github.com/Revisor01/eg-elektronisch-mac/compare/1.0.0...HEAD
+[1.0.0]: https://github.com/Revisor01/eg-elektronisch-mac/releases/tag/1.0.0
