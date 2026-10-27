@@ -193,6 +193,12 @@ regsvr32 "C:\Program Files (x86)\bibel digital\tx4ole14.ocx"
 4. Über Einbindung die Textdateien importieren und über Online die Updates einspielen.
 5. Kopiere den Wrapper einfach auf einen anderen Mac, und es sollte sofort einsatzbereit sein.
 
+## Versionen
+
+Was sich wann geändert hat, steht in [CHANGELOG.md](CHANGELOG.md) — nach
+[Keep a Changelog](https://keepachangelog.com/de/1.1.0/), aus Sicht der
+Nutzer:innen geschrieben.
+
 ## Aufbau
 
 ```
