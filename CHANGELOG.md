@@ -7,6 +7,10 @@ die Versionierung folgt [Semantic Versioning](https://semver.org/lang/de/).
 
 ## [Unreleased]
 
+### Behoben
+
+- Das erzeugte Programm startet das Gesangbuch dort, wo die Anleitung es installiert; ein anderer Ort lässt sich beim Aufruf angeben.
+
 ## [1.0.0] - 2026-10-27
 
 ### Behoben

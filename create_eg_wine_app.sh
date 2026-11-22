@@ -2,7 +2,8 @@
 
 APP_NAME="Evangelisches Gesangbuch"
 
-WINDOWS_APP_PATH="C:/Program Files (x86)/mfbo2a32.exe"
+# Vorgabe wie bei der Installation laut README, sonst per WINDOWS_APP_PATH=... angeben.
+WINDOWS_APP_PATH="${WINDOWS_APP_PATH:-C:/MFchi/mfbo2a32.exe}"
 
 # In Anführungszeichen löst die Shell "~" nicht auf.
 ICON_PATH="${ICON_PATH:-$HOME/Downloads/eg-elektronisch.icns}"
