@@ -107,7 +107,7 @@ Um das Programm bequem über den Applications-Ordner starten zu können, führe 
 
 Vorher im Skript prüfen:
 
-- `WINDOWS_APP_PATH` muss auf die installierte `mfbo2a32.exe` zeigen. Bei der Installation wie oben ist das `C:/MFchi/mfbo2a32.exe`; die Vorgabe im Skript ist `C:/Program Files (x86)/mfbo2a32.exe`.
+- Das Skript startet `C:/MFchi/mfbo2a32.exe`, wie bei der Installation oben. Liegt die Datei woanders, den Pfad beim Aufruf angeben: `WINDOWS_APP_PATH="C:/Program Files (x86)/bibel digital/mfbo2a32.exe" ./create_eg_wine_app.sh`
 - Das Icon wird in `~/Downloads/eg-elektronisch.icns` erwartet. Liegt es woanders, den Pfad beim Aufruf angeben: `ICON_PATH=/pfad/zu/eg-elektronisch.icns ./create_eg_wine_app.sh`
 
 **Skript ausführbar machen:**

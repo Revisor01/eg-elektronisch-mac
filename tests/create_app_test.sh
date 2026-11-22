@@ -43,5 +43,15 @@ HOME="$T/home" bash "$SCRIPT" >/dev/null 2>"$T/err"
 grep -q "Icon nicht gefunden" "$T/err"; check "ohne Icon kommt eine Meldung" $?
 [ ! -e "$T/apps/Evangelisches Gesangbuch.app" ]; check "ohne Icon entsteht kein App-Bundle" $?
 
+# Vorgabe passt zur Installation laut README, eigener Pfad über WINDOWS_APP_PATH.
+run
+echo icon > "$T/home/Downloads/eg-elektronisch.icns"
+HOME="$T/home" bash "$SCRIPT" >/dev/null 2>&1
+grep -qF 'wine "C:/MFchi/mfbo2a32.exe"' "$(bundle)/MacOS/start-windows-app.sh"; check "Vorgabe startet C:/MFchi/mfbo2a32.exe" $?
+run
+echo icon > "$T/home/Downloads/eg-elektronisch.icns"
+HOME="$T/home" WINDOWS_APP_PATH="C:/Program Files (x86)/bibel digital/mfbo2a32.exe" bash "$SCRIPT" >/dev/null 2>&1
+grep -qF 'wine "C:/Program Files (x86)/bibel digital/mfbo2a32.exe"' "$(bundle)/MacOS/start-windows-app.sh"; check "WINDOWS_APP_PATH wird verwendet" $?
+
 if [ "$failures" -eq 0 ]; then echo "Alle Prüfungen bestanden"; else echo "$failures Prüfung(en) fehlgeschlagen"; fi
 exit $((failures > 0))
